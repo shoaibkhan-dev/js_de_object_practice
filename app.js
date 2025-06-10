@@ -64,5 +64,37 @@
 // console.log(users.has("usman"));
 
 
-let emails = new Set (["abc@gmail.com", "abc@gmail.com", "xyz@gmail.com", "sho@gmail"])
-console.log(emails.has("lmn@gmail.com"));
+// let emails = new Set (["abc@gmail.com", "abc@gmail.com", "xyz@gmail.com", "sho@gmail"])
+// console.log(emails.has("lmn@gmail.com"));
+
+
+const nums = [1,2,3,4,5]
+const [first, second, ...rest] = nums
+
+console.log(first)
+console.log(rest)
+
+
+function reverseString(str) {
+    let reversed = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+      reversed += str[i];
+    }
+    return reversed;
+  }
+  
+  console.log(reverseString("hello"));   // Output: "olleh"
+  console.log(reverseString("Gggggg"));  // Output: "gggggG"
+  
+function reverseString(str){
+    let reversed = "";
+    for(let i = str.length - 1; i>= 0; i--){
+        reversed += str[i];
+    }
+    return reversed;
+}
+
+
+console.log(reverseString("hello everyone howare you people"));
+
+
